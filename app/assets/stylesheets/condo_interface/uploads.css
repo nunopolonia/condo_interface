@@ -26,6 +26,10 @@ div.condo-drop-indicator {
   height: 75px;
 }
 
+div.condo-file-selection > form > label {
+  margin-right: 10px;
+}
+
 div.condo-file-selection > form > input {
   display: none;
 }

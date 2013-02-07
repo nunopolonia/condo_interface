@@ -415,18 +415,15 @@
 				switch(newValue) {
 					case STARTED:
 						scope.paused = false;
-						scope.upload.message = 'starting...';
 						break;
 						
 					case UPLOADING:
 						element.find('div.bar').addClass('animate');
-						scope.upload.message = undefined;
 						scope.paused = false;
 						break;
 						
 					case COMPLETED:
 						scope.upload.message = 'complete';
-						element.find('td.controls').replaceWith( '<td class="blank" />' );
 						element.find('div.bar').removeClass('animate');
 						
 						if(scope.remove_completed)
@@ -513,13 +510,6 @@
 						$document.bind('click', close);
 					}
 				});
-				
-				
-				//
-				// Center the pop-up, based on CSS location of the button
-				//
-				var popup = element.next('ul.dropdown-menu');
-				popup.css('margin-left', -(popup.width() / 2) + 'px');
 			}
 		};
 	}]);
