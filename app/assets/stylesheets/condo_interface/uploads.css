@@ -46,19 +46,9 @@ div.condo-uploads-wrapper > div.condo-drop-indicator {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	
-	border: 1px dashed grey;
-}
-
-/*
- * 
- * Build the block that will contain the manual / global controls
- * 
- */
-div.condo-uploads-wrapper > div.condo-file-selection {
-	position: absolute;
-	height: 3em;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	padding: 15px;
+  color: #ccc;
+	border: 1px dashed #ccc;
+  border-radius: 5px;
+  height: 100px;
 }
