@@ -35,7 +35,7 @@ div.condo-file-selection > form > input {
 }
 
 table.condo-uploads {
-  margin: 0 20px;
+  margin: 20px 0;
 }
 
 tr.condo-upload > td.progressbar {
@@ -62,8 +62,15 @@ tr.condo-upload > td.controls {
   width: 20px; 
 }
 
-div.progress { width: 300px; }
+div.progress {
+  width: 300px;
+  margin-bottom: 0px !important;
+}
 
 tr.condo-upload > td.remove {
   width: 20px; 
 }
+
+ul.dropdown-menu { padding: 10px; }
+
+input.simultaneous { width: 30px; margin-bottom: 0px !important; }
