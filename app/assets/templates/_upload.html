@@ -2,18 +2,20 @@
 	<div class="condo-drop-indicator">Drag files into this box</div>
 
 	<div class="condo-uploads-container">
-    <table class="table condo-uploads"> <!-- NOTE:: Controller Name: UploadsCtrl -->
-      <tr class="condo-upload" co-upload data-ng-repeat="upload in uploads">
-        <td class="name"><i class="icon-file"></i>{{upload.path}}{{upload.name}}</td>
-        <td class="size">{{size}}</td>
-        <td class="controls"><i ng-class="{'icon-play':paused, 'icon-pause':!paused}" co-tap="playpause(upload)"></i></td>
-        <td class="progressbar">
-          <div class="progress"> 
-            <div class="bar" style="width: {{progress}}%;"></div>
-          </div>
-        </td>
-        <td class="close" co-tap="animate_remove(upload, 900)"><i class="icon-remove"></i></td>
-      </tr>
+    <table class="table table-hover condo-uploads"> <!-- NOTE:: Controller Name: UploadsCtrl -->
+      <tbody>
+        <tr class="condo-upload" co-upload data-ng-repeat="upload in uploads">
+          <td class="name">{{upload.path}}{{upload.name}}</td>
+          <td class="size">{{size}}</td>
+          <td class="controls"><i ng-class="{'icon-play':paused, 'icon-pause':!paused}" co-tap="playpause(upload)"></i></td>
+          <td class="progressbar">
+            <div class="progress"> 
+              <div class="bar" style="width: {{progress}}%;"></div>
+            </div>
+          </td>
+          <td class="remove" co-tap="animate_remove(upload, 900)"><i class="icon-remove"></i></td>
+        </tr>
+      </tbody>
     </table>
 	</div>
 	<div class="condo-file-selection">

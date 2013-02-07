@@ -34,6 +34,10 @@ div.condo-file-selection > form > input {
   display: none;
 }
 
+table.condo-uploads {
+  margin: 0 20px;
+}
+
 tr.condo-upload > td.progressbar {
   width: 300px;
 }
@@ -60,6 +64,6 @@ tr.condo-upload > td.controls {
 
 div.progress { width: 300px; }
 
-tr.condo-upload > td.close {
+tr.condo-upload > td.remove {
   width: 20px; 
 }
