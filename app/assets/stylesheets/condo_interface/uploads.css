@@ -33,3 +33,9 @@ div.condo-file-selection > form > label {
 div.condo-file-selection > form > input {
   display: none;
 }
+
+td.condo-upload > td.progressbar {
+  width: 200px;
+}
+
+div.progress { width: 200px; }
