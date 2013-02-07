@@ -6,13 +6,13 @@
       <tr class="condo-upload" co-upload data-ng-repeat="upload in uploads">
         <td class="name"><i class="icon-file"></i>{{upload.path}}{{upload.name}}</td>
         <td class="size">{{size}}</td>
-        <td><i class="controls" ng-class="{'icon-paused':paused, 'icon-play':!paused}" co-tap="playpause(upload)"></i></td>
+        <td class="controls"><i ng-class="{'icon-play':paused, 'icon-pause':!paused}" co-tap="playpause(upload)"></i></td>
         <td class="progressbar">
           <div class="progress"> 
             <div class="bar" style="width: {{progress}}%;"></div>
           </div>
         </td>
-        <td co-tap="animate_remove(upload, 900)"><i class="icon-remove"></i></td>
+        <td class="close" co-tap="animate_remove(upload, 900)"><i class="icon-remove"></i></td>
       </tr>
     </table>
 	</div>

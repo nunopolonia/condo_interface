@@ -23,7 +23,7 @@ div.condo-drop-indicator {
   color: #aaa;
 	border: 1px dashed #aaa;
   border-radius: 5px;
-  height: 75px;
+  height: 50px;
 }
 
 div.condo-file-selection > form > label {
@@ -34,8 +34,32 @@ div.condo-file-selection > form > input {
   display: none;
 }
 
-td.condo-upload > td.progressbar {
-  width: 200px;
+tr.condo-upload > td.progressbar {
+  width: 300px;
 }
 
-div.progress { width: 200px; }
+tr.condo-upload > td.name {
+	text-align: left;
+  width: 300px;	
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+tr.condo-upload > td.size {
+  width: 100px; 
+}
+
+tr.condo-upload > td.controls {
+  width: 20px; 
+}
+
+div.progress { width: 300px; }
+
+tr.condo-upload > td.close {
+  width: 20px; 
+}

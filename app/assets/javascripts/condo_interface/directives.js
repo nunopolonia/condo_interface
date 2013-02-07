@@ -423,7 +423,7 @@
 						break;
 						
 					case COMPLETED:
-						scope.upload.message = 'complete';
+						element.find('td.controls').replaceWith( '<td class="blank" />' );
 						element.find('div.bar').removeClass('animate');
 						
 						if(scope.remove_completed)
@@ -435,7 +435,6 @@
 					case PAUSED:
 						element.find('div.bar').removeClass('animate');
 						if (scope.upload.message === undefined)
-							scope.upload.message = 'paused';
 							
 						scope.paused = true;
 						// No need for break
