@@ -4,8 +4,7 @@
 	<div class="condo-uploads-container">
     <table class="table condo-uploads"> <!-- NOTE:: Controller Name: UploadsCtrl -->
       <tr class="condo-upload" co-upload data-ng-repeat="upload in uploads">
-        <td><i class="icon-file"></i></td>
-        <td class="name">{{upload.path}}{{upload.name}}</td>
+        <td class="name"><i class="icon-file"></i>{{upload.path}}{{upload.name}}</td>
         <td class="size">{{size}}</td>
         <td class="controls image" ng-class="{'paused':paused, 'uploading':!paused}" co-tap="playpause(upload)"></td>
         <td>
@@ -18,8 +17,11 @@
     </table>
 	</div>
 	<div class="condo-file-selection">
-	  <input id="file-upload_{{$id}}" type="file" multiple, class="btn" />
-    <div class="btn-group">
+    <form>
+      <label for="file-upload_{{$id}}" class="btn btn-inverse">Add Files </label>
+	    <input id="file-upload_{{$id}}" type="file" multiple />
+    </form>
+    <div class="btn-group dropup">
       <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Options<span class="caret"></span></a>
       <ul class="dropdown-menu">
         <li><label class="checkbox"><input data-ng-model="autostart" type="checkbox"> Autostart</label></li>

@@ -1,28 +1,7 @@
-/**
-*	CoTag Condo Example Uploader
-*	Direct to cloud resumable uploads
-*	
-*   Copyright (c) 2012 CoTag Media.
-*	
-*	@author		Stephen von Takach <steve@cotag.me>
-*	@copyright	2012 cotag.me
-* 
-*	
-*	A responsive and resolution independent upload UI
-*
-**/
-
-/*
- * 
- * Upload wrapper styles
- * 
- */
-
 div.condo-uploads-wrapper {
 	position: relative;
-	height: 400px;
 	width: 100%;
-	overflow:hidden;
+  margin-bottom: 40px;
 }
 
 
@@ -39,16 +18,14 @@ div.condo-uploads-wrapper > div {
  * Drag and drop indicator styles
  * 
  */
-div.condo-uploads-wrapper > div.condo-drop-indicator {
-	opacity: 1;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+div.condo-drop-indicator {
 	padding: 15px;
-  color: #ccc;
-	border: 1px dashed #ccc;
+  color: #aaa;
+	border: 1px dashed #aaa;
   border-radius: 5px;
-  height: 100px;
+  height: 75px;
+}
+
+div.condo-file-selection > form > input {
+  display: none;
 }
